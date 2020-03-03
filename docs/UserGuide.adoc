@@ -151,8 +151,14 @@ Format: `exit`
 
 === Find event/module/deadline [keywords]: `find`
 User able to find module which matches any of the given keywords.
+      -	The search is case insensitive. e.g tutorial will match Tutorial
+      -	The order of the keywords does not matter. e.g. 3 Tutorial will match Tutorial 3
+      -	Names containing part of the searched words will be matched e.g. tut will match Tutorial 4
 
-Format: `find m/Module_CODE`
+Format: `find m/MODULE_CODE`
+        Return registered modules that match module
+Format: `find m/DEADLINE`
+        Return deadlines with 'homework' in their names
 
 === Finishing a task : `done`
 If the user is currently not viewing an event or is not viewing the event of interest, the following format will be used:
