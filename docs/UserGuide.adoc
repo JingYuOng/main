@@ -160,6 +160,10 @@ Format: `find m/MODULE_CODE`
 
 Return registered modules that match module
 
+Format: `find d/Deadline`
+
+Return matched deadline
+
 === Finishing a task : `done`
 If the user is currently not viewing an event or is not viewing the event of interest, the following format will be used:
 and bring the closest event to focus e.g. Tutorial 4 happening on Week 6, where the UI will prompt the user: “Which deadline do you wish to complete?”
