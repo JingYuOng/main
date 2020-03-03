@@ -157,7 +157,8 @@ User able to find module which matches any of the given keywords.
       -	Names containing part of the searched words will be matched e.g. tut will match Tutorial 4
 
 Format: `find m/MODULE_CODE`
-        Return registered modules that match module
+
+Return registered modules that match module
 
 === Finishing a task : `done`
 If the user is currently not viewing an event or is not viewing the event of interest, the following format will be used:
