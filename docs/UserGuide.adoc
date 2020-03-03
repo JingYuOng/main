@@ -106,6 +106,9 @@ Format: `find KEYWORD [MORE_KEYWORDS]`
 * Persons matching at least one keyword will be returned (i.e. `OR` search). e.g. `Hans Bo` will return `Hans Gruber`, `Bo Yang`
 ****
 
+
+
+
 Examples:
 
 * `find John` +
@@ -144,6 +147,31 @@ Format: `clear`
 
 Exits the program. +
 Format: `exit`
+
+
+=== Find event/module/deadline [keywords]: find
+User able to find module which matches any of the given keywords.
+Format: 'find CS2103'
+
+=== Finishing a task : done
+If the user is currently not viewing an event or is not viewing the event of interest, the following format will be used:
+Format: done m/cs2103 n/Tutorial (m - module, n - name)
+This will bring the closest event to focus e.g. Tutorial 4 happening on Week 6, where the UI will prompt the user: “Which deadline do you wish to complete?”
+
+The following command can then be used (or be used instantly should the user already be viewing the event of interest):
+Format: done 1
+This will complete the first deadline on the list of deadlines for that event.
+
+=== Export: export
+User could export all the module, event, and deadlines as a .ics file
+Format: export [s/START_DATE] [e/END_DATE] [d/TARGET_DIRECTORY] f/FILENAME
+
+
+
+
+
+
+
 
 === Saving the data
 
