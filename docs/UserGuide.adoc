@@ -158,9 +158,9 @@ User able to find module which matches any of the given keywords.
 
 Format: `find m/MODULE_CODE`
         Return registered modules that match module
-        
-Format: `find m/DEADLINE`
-        Return deadlines with 'homework' in their names
+
+Format: `find d/DEADLINE_NAME`
+        Returns deadlines with “homework” in their names
 
 === Finishing a task : `done`
 If the user is currently not viewing an event or is not viewing the event of interest, the following format will be used:
