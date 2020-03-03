@@ -168,7 +168,7 @@ Format: `done 1`
 === Export: `export`
 User could export all the module, event, and deadlines as a .ics file. +
 
-Format: 'export [s/START_DATE] [e/END_DATE] [d/TARGET_DIRECTORY] f/FILENAME' +
+Format: `export [s/START_DATE] [e/END_DATE] [d/TARGET_DIRECTORY] f/FILENAME` +
 
 
 
