@@ -152,7 +152,7 @@ Format: `exit`
 === Find event/module/deadline [keywords]: `find`
 User able to find module which matches any of the given keywords. +
 
-Format: 'find m/Module_CODE'
+Format: `find m/Module_CODE`
 
 === Finishing a task : `done`
 If the user is currently not viewing an event or is not viewing the event of interest, the following format will be used: +
