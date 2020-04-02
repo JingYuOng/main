@@ -57,9 +57,9 @@ acceptable.
 === Viewing help : `help`
 
 A pop-up window shows up which direct user to Modulo's user guide!! + 
-Format: `help`
+Format: `help`+
 Example: 
-* `help`
+`help`
 
 === Adding a module: `module`
 
@@ -70,7 +70,7 @@ Example:
 
 * `module n/cs2103 ay/2019/2020 s/2`
 
-Module CS2103 will be added into Module System.
+Module CS2103 in academic year 19/20, semester 2 will be added into Module System.
 
 === Adding an event : `event`
 
@@ -102,24 +102,22 @@ Adds a Homework deadline to the nearest upcoming tutorial of CS2103
 
 === Displaying all modules `list all modules`
 
-Shows a list of modules in the panel. +
+Display all the registered modules in the semester and switch to module panel. +
 Format: `list m`+
-Display all the registered modules in the semester and switch to module panel 
 
 Examples:
 
 * `list m` +
 
 ****
-* Shows all the modules that user enrolled in the panel.
+* Shows all the registered module.
 ****
 
 === Displaying all the events `list all events`
 
-Shows all events in the panel. +
+Display events from all the registered modules in the semester and switch to event panel. +
 Format: `list all event `+
-Display events from all the registered modules in the semester and switch to event panel.  
-
+  
 Examples:
 
 * `list all event` +
@@ -135,7 +133,7 @@ Format: `list e`
 Examples:
 
 * `list e` +
-FIltered and returns the events in the upcoming day or weeks .
+Filtered and returns the events in the upcoming day or weeks .
 
 ****
 * Shows all the events in the upcoming week.
