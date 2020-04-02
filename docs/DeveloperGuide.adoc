@@ -117,7 +117,7 @@ NOTE: The lifeline for `DeleteCommandParser` should end at the destroy marker (X
 .Structure of the Model Component
 image::ModelClassDiagram.png[]
 
-*API* : link:{repoURL}main/blob/master/docs/images/ModuloStorage.png[`ModuloStorage.png`]
+*API* : link:{repoURL}/main/blob/master/docs/images/ModuloStorage.png[`ModuloStorage.png`]
 
 The `Model`,
 
@@ -137,7 +137,7 @@ image:BetterModelClassDiagram.png[]
 .Structure of the Storage Component
 image::StorageClassDiagram.png[]
 
-*API* : link:{repoURL}blob/master/docs/images/ModuloStorage.png[`ModuloStorage.png`]
+*API* : link:{repoURL}/blob/master/docs/images/ModuloStorage.png[`ModuloStorage.png`]
 
 The `Storage` component,
 
