@@ -103,8 +103,8 @@ Adds a Homework deadline to the nearest upcoming tutorial of CS2103
 === Displaying all modules `list all modules`
 
 Shows a list of modules in the panel. +
-Format: `list m`
-Display all the registered modules in the semester 
+Format: `list m`+
+Display all the registered modules in the semester and switch to module panel 
 
 Examples:
 
@@ -117,8 +117,8 @@ Examples:
 === Displaying all the events `list all events`
 
 Shows all events in the panel. +
-Format: `list all event `
-Display events from all the registered modules in the semester.
+Format: `list all event `+
+Display events from all the registered modules in the semester and switch to event panel.  
 
 Examples:
 
