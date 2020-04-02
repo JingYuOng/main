@@ -56,7 +56,7 @@ acceptable.
 
 === Viewing help : `help`
 
-A pop-up window shows up which direct user to Modulo's user guide!!
+A pop-up window shows up which direct user to Modulo's user guide!! + 
 Format: `help`
 Example: 
 * `help`
@@ -70,6 +70,8 @@ Example:
 
 * `module n/cs2103 ay/2019/2020 s/2`
 
+Module CS2103 will be added into Module System.
+
 === Adding an event : `event`
 
 Adds an event to a module. + 
@@ -80,6 +82,8 @@ Autopopulated based on keyword detection, e.g. Tutorials added for weekly will b
 Example: 
 
 * `event m/CS2103 n/Tutorial s/2020-01-30 09:00 e/2020-01-30 10:00 v/COM1-B103 r/YES f/2 until/2020-05-08`
+
+Weekly tutorial event starts from 30th Jan 9a.m to 10 a.m at COM1_B103 will added until last day of the semester (8th, May)
 
 === Adding a deadline : `deadline`
 
@@ -100,33 +104,33 @@ Adds a Homework deadline to the nearest upcoming tutorial of CS2103
 
 Shows a list of modules in the panel. +
 Format: `list m`
+Display all the registered modules in the semester 
 
 Examples:
 
 * `list m` +
-Returns all modules 
 
 ****
 * Shows all the modules that user enrolled in the panel.
 ****
+
 === Displaying all the events `list all events`
 
 Shows all events in the panel. +
 Format: `list all event `
+Display events from all the registered modules in the semester.
 
 Examples:
 
 * `list all event` +
-Returns all the events in the semester.
 
 ****
 * Shows all the events in the semester.
 ****
 
-=== Displaying events `list / events in the upcoming week`
-
+=== Displaying events `list upcoming events`
 Shows a list of upcoming events in the panel. +
-Format: `list m`
+Format: `list e`
 
 Examples:
 
@@ -156,7 +160,7 @@ Shows a list of events happening in August
 ****
 
 === Find all event/module [keywords]: `find`
-User able to find module/event which matches any of the given keywords.
+User able to find module/event which matches any of the given keywords. if currently user is vew
 
 * The search is case insensitive. e.g tutorial will match Tutorial
 * The order of the keywords does not matter. e.g. 3 Tutorial will match Tutorial 3
@@ -164,11 +168,9 @@ User able to find module/event which matches any of the given keywords.
 
 Format: `find KEYWORD [MORE_KEYWORDS]...`
 
-Return registered any modules or events that match keywords.
+Example: find CS
 
-Format: `find d/Deadline`
-
-Return matched deadline
+Return registered any modules or events that match keywords 'CS'.
 
 === Finishing a task : `done`
 If the user is currently not viewing an event or is not viewing the event of interest, the following format will be used:
