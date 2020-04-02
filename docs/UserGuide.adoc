@@ -78,14 +78,15 @@ Adds an event to a module. +
 Format: `event m/MODULE n/NAME s/StartDateTime e/EndDateTime v/Venue r/IsRepeat f/FREQUENCY until/EventEndDate`. +
 
 ****
-*Autopopulated based on keyword detection, e.g. Tutorials added for weekly will be populated from Week 3-13, and will have numbers *automatically appended, e.g. Tutorial 1, Tutorial 2. A default deadline will also be added to the event, e.g. Tutorial Homework
+* Autopopulated based on keyword detection, e.g. Tutorials added for weekly will be populated from Week 3-13, and will have numbers * automatically appended, e.g. Tutorial 1, Tutorial 2. 
+* A default deadline will also be added to the event, e.g. Tutorial Homework
 ****
 
 Example: 
 
 * `event m/CS2103 n/Tutorial s/2020-01-30 09:00 e/2020-01-30 10:00 v/COM1-B103 r/YES f/2 until/2020-05-08`
 
-Weekly tutorial event starts from 30th Jan 9a.m to 10 a.m at COM1_B103 will added until last day of the semester (8th, May)
+* Weekly tutorial event starts from 30th Jan 9a.m to 10 a.m at COM1_B103 will added until last day of the semester (8th, May)
 
 === Adding a deadline : `deadline`
 
@@ -108,9 +109,7 @@ Adds a Homework deadline to the nearest upcoming tutorial of CS2103
 Display all the registered modules in the semester and switch to module panel. +
 Format: `list m`+
 
-Examples:
-
-* `list m` +
+Examples: `list m` +
 
 ****
 * Shows all the registered module.
@@ -121,9 +120,7 @@ Examples:
 Display events from all the registered modules in the semester and switch to event panel. +
 Format: `list all event `+
   
-Examples:
-
-* `list all event` +
+Examples: `list all event` +
 
 ****
 * Shows all the events in the semester.
