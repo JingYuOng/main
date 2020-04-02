@@ -110,6 +110,7 @@ Display all the registered modules in the semester and switch to module panel. +
 Format: `list m`
 
 Examples: 
+
 * `list m` 
 
 * Shows all the registered module.
@@ -121,7 +122,8 @@ Display events from all the registered modules in the semester and switch to eve
 Format: `list all event `+
   
 Examples: 
-* `list all event` +
+
+* `list all event` 
 
 * Shows all the events in the semester.
 
