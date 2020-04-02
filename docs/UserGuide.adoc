@@ -77,7 +77,9 @@ Module CS2103 in academic year 19/20, semester 2 will be added into Module Syste
 Adds an event to a module. + 
 Format: `event m/MODULE n/NAME s/StartDateTime e/EndDateTime v/Venue r/IsRepeat f/FREQUENCY until/EventEndDate`. +
 
-Autopopulated based on keyword detection, e.g. Tutorials added for weekly will be populated from Week 3-13, and will have numbers automatically appended, e.g. Tutorial 1, Tutorial 2. A default deadline will also be added to the event, e.g. Tutorial Homework
+****
+*Autopopulated based on keyword detection, e.g. Tutorials added for weekly will be populated from Week 3-13, and will have numbers *automatically appended, e.g. Tutorial 1, Tutorial 2. A default deadline will also be added to the event, e.g. Tutorial Homework
+****
 
 Example: 
 
