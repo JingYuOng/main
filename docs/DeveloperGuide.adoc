@@ -137,7 +137,7 @@ image:BetterModelClassDiagram.png[]
 .Structure of the Storage Component
 image::StorageClassDiagram.png[]
 
-*API* : link:{repoURL}ain/blob/master/docs/images/ModuloStorage.png[`ModuloStorage.png`]
+*API* : link:{repoURL}blob/master/docs/images/ModuloStorage.png[`ModuloStorage.png`]
 
 The `Storage` component,
 
