@@ -57,7 +57,7 @@ acceptable.
 === Viewing help : `help`
 
 A pop-up window shows up which direct user to Modulo's user guide!! + 
-Format: `help`+
+Format: `help`. +
 Example: 
 `help`
 
@@ -98,6 +98,7 @@ Format: `deadline m/MODULE e/EVENT_NAME n/DESCRIPTION [r/YES/NO]`
 Examples:
 
 * `deadline m/CS2103 e/Tutorial n/Homework r/NO` +
+
 Adds a Homework deadline to the nearest upcoming tutorial of CS2103
 
 === Displaying all modules `list all modules`
