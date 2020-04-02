@@ -33,8 +33,8 @@ image::Ui.png[width="790"]
 e.g. typing *`help`* and pressing kbd:[Enter] will open the help window.
 .  Some example commands you can try:
 
-* **`module`**`n/CS2103 y/2020 s/2` : add new module
-* **`today`**: view deadlines due today
+* **`module`**`n/CS2103 ay/2019/2020 s/2` : add new module
+* **`list m`**: list all the event that user are enrolled
 * *`exit`* : exits the app
 
 .  Refer to <<Features>> for details of each command.
@@ -56,28 +56,31 @@ acceptable.
 
 === Viewing help : `help`
 
+A pop-up window shows up which direct user to Modulo's user guide!!
 Format: `help`
+Example: 
+* `help`
 
 === Adding a module: `module`
 
 Adds a module to Modulo. The default timeframe is set to the current academic year, AY19/20. +
-Format: `module n/NAME`
+Format: `module n/NAME ay/AcademicYear s/Semester`
 
 Example:
 
-* `module n/cs2103`
+* `module n/cs2103 ay/2019/2020 s/2`
 
 === Adding an event : `event`
 
 Adds an event to a module
-Format: event m/MODULE n/NAME t/TIME f/FREQUENCY
+Format: event m/MODULE n/NAME s/StartDateTime e/EndDateTime v/Venue r/IsRepeat f/FREQUENCY until/EventEndDate
 
 Autopopulated based on keyword detection, e.g. Tutorials added for weekly will be populated from Week 3-13, and will have numbers automatically appended, e.g. Tutorial 1, Tutorial 2. A default deadline will also be added to the event, e.g. Tutorial Homework
 
 === Adding a deadline : `deadline`
 
 Adds a deadline to an event.
-Format: `deadline m/MODULE e/EVENT NAME n/DESCRIPTION [r/YES/NO]`
+Format: `deadline m/MODULE e/EVENT_NAME n/DESCRIPTION [r/YES/NO]`
 
 ****
 * Automatically adds a deadline to the nearest event of this name
@@ -89,18 +92,45 @@ Examples:
 * `deadline m/CS2103 e/Tutorial n/Homework r/NO` +
 Adds a Homework deadline to the nearest upcoming tutorial of CS2103
 
-=== Displaying all events and modules: `list / calendar`
+=== Displaying all modules `list all modules`
 
-Shows a list of modules in the calendar view. +
-Format: `list / calendar [m/MONTH]`
+Shows a list of modules in the panel. +
+Format: `list m`
 
 Examples:
 
-* `list m/AUGUST` +
-Returns all tasks in August
+* `list m` +
+Returns all modules 
 
 ****
-* Shows the tasks of modules in the calender view during the specified month.
+* Shows all the modules that user enrolled in the panel.
+****
+=== Displaying all the events `list all events`
+
+Shows all events in the panel. +
+Format: `list all event `
+
+Examples:
+
+* `list all event` +
+Returns all the events in the semester.
+
+****
+* Shows all the events in the semester.
+****
+
+=== Displaying events `list / events in the upcoming week`
+
+Shows a list of upcoming events in the panel. +
+Format: `list m`
+
+Examples:
+
+* `list e` +
+FIltered and returns the events in the upcoming day or weeks .
+
+****
+* Shows all the events in the upcoming week.
 ****
 
 === Displaying all events based on timeframe: `today / tomorrow / this week / next week / this month / MMM (e.g. Mar)`
@@ -121,17 +151,16 @@ Shows a list of events happening in August
 * Shows the events happening during the specified period.
 ****
 
-
-=== Find event/module/deadline [keywords]: `find`
-User able to find module which matches any of the given keywords.
+=== Find all event/module [keywords]: `find`
+User able to find module/event which matches any of the given keywords.
 
 * The search is case insensitive. e.g tutorial will match Tutorial
 * The order of the keywords does not matter. e.g. 3 Tutorial will match Tutorial 3
 * Names containing part of the searched words will be matched e.g. tut will match Tutorial 4
 
-Format: `find m/MODULE_CODE`
+Format: `find KEYWORD [MORE_KEYWORDS]...`
 
-Return registered modules that match module
+Return registered any modules or events that match keywords.
 
 Format: `find d/Deadline`
 
@@ -156,20 +185,21 @@ Format: `export [s/START_DATE] [e/END_DATE] [d/TARGET_DIRECTORY] f/FILENAME`
 === Deleting a module/event/deadline: `delete`
 
 Deletes a module and all its associated events. +
-The UI will display the event of interest and prompt: Delete event or delete one of its deadlines? +
+Deletes a event and all its associated deadlines. +
+Deletes a dealine from the events.
 
-Format: `delete m/MODULE_CODE [n/EVENT_NAME]`
-
+Format 1 : `delete [index] deleting module or event`
+Format 2 : `delete d/index deleting a deadline from the event`
 
 The following formats can be used:
 ****
-* Format: `delete event` (deletes the event)
-* Format: `delete 1` (deletes the first deadline)
+* Format: `delete 1` (deletes the event r module in the left panel list )
+* Format: `delete d/1` (deletes the first deadline)
+
 ****
-In all cases, the UI will confirm with the user. The user can then follow up with:
+* Show module/event/deadline is deleted and removed from the panel.
 ****
-* Format: `y`
-****
+
 
 === Importing a Calendar: `import`
 
