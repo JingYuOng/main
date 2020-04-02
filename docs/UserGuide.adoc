@@ -100,9 +100,9 @@ Format: `deadline m/MODULE e/EVENT_NAME n/DESCRIPTION [r/YES/NO]`
 
 Examples:
 
-* `deadline m/CS2103 e/Tutorial n/Homework r/NO` +
+* `deadline m/CS2103 e/Tutorial n/Homework r/NO` 
 
-Adds a Homework deadline to the nearest upcoming tutorial of CS2103
+* Adds a Homework deadline to the nearest upcoming tutorial of CS2103
 
 === Displaying all modules `list all modules`
 
@@ -110,7 +110,7 @@ Display all the registered modules in the semester and switch to module panel. +
 Format: `list m`+
 
 Examples: 
-* `list m` +
+* `list m` 
 
 * Shows all the registered module.
 
@@ -120,11 +120,11 @@ Examples:
 Display events from all the registered modules in the semester and switch to event panel. +
 Format: `list all event `+
   
-Examples: `list all event` +
+Examples: 
+* `list all event` +
 
-****
 * Shows all the events in the semester.
-****
+
 
 === Displaying events `list upcoming events`
 Shows a list of upcoming events in the panel. +
