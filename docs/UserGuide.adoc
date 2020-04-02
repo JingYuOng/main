@@ -70,7 +70,7 @@ Example:
 
 * `module n/cs2103 ay/2019/2020 s/2`
 
-Module CS2103 in academic year 19/20, semester 2 will be added into Module System.
+* Module CS2103 in academic year 19/20, semester 2 will be added into Module System.
 
 === Adding an event : `event`
 
@@ -109,11 +109,11 @@ Adds a Homework deadline to the nearest upcoming tutorial of CS2103
 Display all the registered modules in the semester and switch to module panel. +
 Format: `list m`+
 
-Examples: `list m` +
+Examples: 
+* `list m` +
 
-****
 * Shows all the registered module.
-****
+
 
 === Displaying all the events `list all events`
 
@@ -133,11 +133,10 @@ Format: `list e`
 Examples:
 
 * `list e` +
-Filtered and returns the events in the upcoming day or weeks .
 
-****
-* Shows all the events in the upcoming week.
-****
+* Filtered and returns the events in the upcoming day or weeks .
+
+
 
 === Displaying all events based on timeframe: `today / tomorrow / this week / next week / this month / MMM (e.g. Mar)`
 
