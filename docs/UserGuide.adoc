@@ -107,7 +107,7 @@ Examples:
 === Displaying all modules `list all modules`
 
 Display all the registered modules in the semester and switch to module panel. +
-Format: `list m`+
+Format: `list m`
 
 Examples: 
 * `list m` 
@@ -165,9 +165,10 @@ User able to find module/event which matches any of the given keywords. if curre
 
 Format: `find KEYWORD [MORE_KEYWORDS]...`
 
-Example: find CS
+Example: 
+* `find CS`
 
-Return registered any modules or events that match keywords 'CS'.
+* Return registered any modules or events that match keywords 'CS'.
 
 === Finishing a task : `done`
 If the user is currently not viewing an event or is not viewing the event of interest, the following format will be used:
