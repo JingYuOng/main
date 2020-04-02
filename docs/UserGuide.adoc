@@ -77,6 +77,10 @@ Format: event m/MODULE n/NAME s/StartDateTime e/EndDateTime v/Venue r/IsRepeat f
 
 Autopopulated based on keyword detection, e.g. Tutorials added for weekly will be populated from Week 3-13, and will have numbers automatically appended, e.g. Tutorial 1, Tutorial 2. A default deadline will also be added to the event, e.g. Tutorial Homework
 
+Example: 
+
+* `event m/CS2103 n/Tutorial s/2020-01-30 09:00 e/2020-01-30 10:00 v/COM1-B103 r/YES f/2 until/2020-05-08`
+
 === Adding a deadline : `deadline`
 
 Adds a deadline to an event. +
